@@ -1,0 +1,35 @@
+import math
+import sys
+
+while True: #creates inf. loop to restart calculator.
+
+    print("Hello and welcome to my calculator.")
+    operator = input("Enter an operator (+, -, * or /): ")
+    print(" ")
+
+    num1 = float(input("Enter 1st Number: "))
+    num2 = float(input("Enter 2nd Number: "))
+
+    if operator == "+":
+        result = num1 + num2
+        print(result)
+    elif operator == "-":
+        result = num1 - num2
+        print(result)
+    elif operator == "*":
+        result = num1 * num2
+        print(result)
+    elif operator == "/":
+        result = num1 / num2
+        print(result)
+    else:
+        print("Please use appropriate operator")
+
+    startagain = input("Would you like to start again?\n Input Y for yes or N for no: " )
+
+    if startagain.lower() == "y" :
+        continue
+    else:
+        print("See you again")
+        break #stops loop
+sys.exit #Is sys.exit necessary?
