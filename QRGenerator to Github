@@ -1,0 +1,7 @@
+import qrcode
+####QR Generator to my website.
+
+#creates QR Code img
+img = qrcode.make('https://github.com/JanVCodes')
+#saves the image as a jpg
+img.save('Github.jpg')
