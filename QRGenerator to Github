@@ -1,7 +1,28 @@
 import qrcode
-####QR Generator to my website.
+####QR Generator to my Github.
 
 #creates QR Code img
 img = qrcode.make('https://github.com/JanVCodes')
 #saves the image as a jpg
 img.save('Github.jpg')
+
+
+
+#########################
+
+########QR Code Generator with URL input ########
+
+import qrcode
+
+#Input website for QR code
+
+url = input("Please enter URL: ")
+
+#creates code image which makes URL visible
+img = qrcode.make(url)
+
+#creates filename plus extension
+filename = input("Enter filename for QR code: ")
+
+#prints file being saved
+print(f"QR Code saved as {filename}")
